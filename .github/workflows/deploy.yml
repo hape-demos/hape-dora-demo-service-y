@@ -1,0 +1,14 @@
+name: deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: echo "deploy to kind"
